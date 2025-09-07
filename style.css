@@ -289,7 +289,6 @@ ul, dl, dt, dd {
 }
 .cont > section{
     position: relative;
-    overflow-y: auto;
 }
 
 .con_dwn, .con_prom, .con_intro, .con_magicdoll, .con_bosstime, .con_update{
@@ -512,6 +511,7 @@ footer .footer-info-bottom .txt-box {
 	font-size: 14px;
     opacity: .6;
 }
+
 
 
 
