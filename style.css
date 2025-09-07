@@ -317,13 +317,7 @@ ul, dl, dt, dd {
     height: 127px;
     margin-bottom: 50px;
 }
-  
-.con_dwn .downloadList li {
-	
-    border-bottom:1px solid rgba(0, 0, 0, 0.1);
-    padding: 0 22px;
-}
-  
+    
 .con_dwn .downloadList li dl {
     height: 230px;
     position: relative;
@@ -522,6 +516,7 @@ footer .footer-info-bottom .txt-box {
 	font-size: 14px;
     opacity: .6;
 }
+
 
 
 
