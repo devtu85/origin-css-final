@@ -339,7 +339,7 @@ ul, dl, dt, dd {
 .con_dwn .downloadList li dl dd.txt01 {
     padding-top: 14px;
     font-size: 16px;
-  text-align: left;
+    text-align: left;
 }
 .con_dwn .downloadList li dl dd.txt02 {
     padding-top: 28px;
@@ -512,6 +512,7 @@ footer .footer-info-bottom .txt-box {
 	font-size: 14px;
     opacity: .6;
 }
+
 
 
 
