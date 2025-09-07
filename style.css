@@ -299,7 +299,7 @@ ul, dl, dt, dd {
 /* 다운로드 */
 
 .con_dwn, .con_prom, .con_intro, .con_magicdoll, .con_bosstime, .con_update{
-    padding:164px 40px 120px;
+    padding:144px 40px 120px;
     width:100%;
 }
 
@@ -314,7 +314,7 @@ ul, dl, dt, dd {
     text-align: center;
     background: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiiBYp2JU7Cjc2K9rSQLSWdnfyl0VQrjG4oC1QwRVCpyEuvO3HIzieG5TpJezI0BZU_mzmBav0L6G4LYW1O-Yq-dmkgX5KG0AwtToqaDVWLAtMaKy4NlOEdxoEQ1Z-1nlpUFMx3X81UrTBpnwdOCy5pRiU9MlI9gVa0Sud_MQZQqmVH5d84cqVRzS6df4nf/s16000/client_download.png") center no-repeat;
     text-indent: -9999em;
-    height: 100px;
+    height: 127px;
     margin-bottom: 50px;
 }
   
@@ -521,6 +521,7 @@ footer .footer-info-bottom .txt-box {
 	font-size: 14px;
     opacity: .6;
 }
+
 
 
 
