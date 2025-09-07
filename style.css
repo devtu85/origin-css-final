@@ -1,0 +1,536 @@
+@charset "utf-8";
+
+
+/* 리셋 */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.15;
+	 font-family: "Noto Sans", "Noto Sans JP", "Noto Sans KR", "Noto Sans Thai", "Noto Sans Arabic", "Apple LiGothic", -apple-system, BlinkMacSystemFont, Roboto, Arial, "Microsoft JhengHei", "Microsoft YaHei", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input, textarea, button {
+  outline: 0;
+}
+
+html {
+  height: 100%;
+  color: #fff;
+}
+
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+ol, ul {
+  list-style: none;
+  padding: 0;
+}
+
+button {
+  display: inline-block;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+
+a {
+    cursor: pointer;
+    color: inherit;
+    text-decoration: none;
+}
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+}
+
+ul, dl, dt, dd {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+
+/* 헤더 */
+
+#nc-cnb{
+	width: 100%;
+	position: fixed;
+    z-index: 9999;
+}
+
+.ncc-header {
+	position: absolute;
+	width: 100%;
+	min-width: 320px;
+	height: auto;
+	top: 0;
+	left: 0;
+	z-index: 9100024;
+	background-color: rgba(0, 0, 0, 0.5);
+	transition: top 0s ease;
+}
+
+#nc-cnb .ncc-gnb-wrap {
+    clear: both;
+    height: 57px;
+    padding-left: 32px;
+    position: relative;
+    text-align: left;
+}
+
+#nc-cnb * {
+    box-sizing: border-box;
+    letter-spacing: 0 !important;
+}
+
+#nc-cnb .ncc-gnb-wrap:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+#nc-cnb .ncc-logo{
+	float: left;
+	color: #fff;
+	font-size: 18px;
+	height: 58px;
+	justify-content: center;
+	line-height: 58px;
+	display: inline-block;
+    padding-right: 120px;
+}
+
+#nc-cnb .ncc-logo span{
+	display: none;
+}
+
+#nc-cnb :after, #nc-cnb :before {
+    box-sizing: inherit;
+}
+
+#nc-cnb .ncc-bi {
+    background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjur4lHYrKDvLFY0YajXI7t74Wc4b2cmLx74fo58xohFyorXkwCNlAzIxW1X0xSSlQUTSZA5J9Q3Sg-Y5gC4KqeTX2d_QTYElyqQfST6saxZ9z8ZH7WUGOHRUsoH-qn4otYqrbKi2CI7Pcx9IXkTqKSk6mb9VSw_GgK11Th6aMsaYlOpwVG-LKkeCB9Hu_Q/s16000/logo.png");
+    background-size: cover;
+    width: 77px;
+    height: 46px;
+    margin-top: 14px;
+    display: inline-block;
+}
+
+#nc-cnb .ncc-lnb-wrap {
+	padding-left: 40px;
+    display: block;
+    width: 100%;
+}
+
+
+#nc-cnb .ncc-lnb-wrap {
+    border-top: 1px solid hsla(0, 0%, 100%, .1);
+    height: 58px;
+}
+
+#nc-cnb .ncc-lnb-wrap {
+    border-top: 1px solid hsla(0, 0%, 100%, .1);
+    display: none;
+    height: 74px;
+}
+
+#nc-cnb .ncc-lnb .ncc-lnb-list {
+	float: left;
+    list-style: none;
+    margin: 8px 0 0 0px;
+    padding: 0;
+}
+
+#nc-cnb .ncc-lnb .ncc-lnb-list:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+#nc-cnb :after, #nc-cnb :before {
+    box-sizing: inherit;
+}
+
+#nc-cnb :after, #nc-cnb :before {
+    box-sizing: inherit;
+}
+
+#nc-cnb li, #nc-cnb ol, #nc-cnb ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+#nc-cnb .ncc-lnb .ncc-lnb-item {
+    display: inline-block;
+    margin-left: -4px;
+}
+
+#nc-cnb .ncc-lnb .ncc-lnb-item>a {
+    color: hsla(0, 0%, 100%, .5);
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    height: 58px;
+    line-height: 56px;
+    padding: 0 16px;
+    position: relative;
+	transition: color .3s ease;
+}
+
+#nc-cnb .ncc-lnb .ncc-lnb-item>a:hover{
+	color: hsla(0, 0%, 100%, 1);
+}
+
+
+#nc-cnb .ncc-lnb-wrap {
+    display: block;
+    width: 100%;
+}
+
+#nc-cnb .ncc-gamestart {
+    float: right;
+    margin-top: -1px;
+    position: relative;
+    z-index: 2;
+}
+
+#nc-cnb .ncc-gamestart-btn {
+    position: relative;
+}
+
+#nc-cnb .ncc-gamestart-btn__start {
+    align-items: center;
+    background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVRBHys-Hmr2UwmOdCSXcPsSOXBjuiQYkZXIFGNruihv2jZrnOL9Ok2D9AsPQkQnOlo6orhjB0ZW2xbUbGCabR38oRfL91Ho6jxcKhDIxdguUV6PP_QrjKJ1v-V7yTFKlpkJbPXIMSO_AWoYj2oVPSJyMqEoFLImmXIfGjj2xdNUhS5XDI1pJdvHdWwXNu/s16000/btn-download.png");
+    background-color: transparent !important;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    color: #fff;
+    display: block;
+    display: inline-flex;
+    font-size: 21.5px;
+    height: 74px;
+    justify-content: center;
+    line-height: 56px;
+    position: relative;
+    text-align: center;
+    transition: background-image .3s ease-out;
+    vertical-align: top;
+    width: 240px;
+    z-index: 0;
+    text-indent: -9999px;
+}
+
+#nc-cnb .ncc-gamestart-btn__start:hover{
+    background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhmiWkICTzx89w9fXkHeHOZPxZpuTODveuWpitPnifdJs1K5y7Ek2pFD9FjU8UEWuFF-fAk3DZmQDwuvkcgyLd7I5P2MDvvigarU1d0fQy4AQifYKuWR7toTI53PQki-TUdh19DpJNuD0hx5NcGz_hKByVFQnBhmj_ckqwxK5_QeBJLTlFDmQFPdepDTxvv/s16000/btn-download-hover.png");
+}
+
+
+
+
+/* 콘텐츠 */
+.cont{    
+    position: relative;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    background-color: #000
+}
+.cont > section{
+    position: relative;
+    overflow-y: auto;
+}
+
+.con_dwn, .con_prom, .con_intro, .con_magicdoll, .con_bosstime, .con_update{
+    background-color: #413023;
+}
+
+/* 다운로드 */
+
+.con_dwn, .con_prom, .con_intro, .con_magicdoll, .con_bosstime, .con_update{
+    padding:164px 40px 120px;
+    width:100%;
+}
+
+.con_dwn > div,.con_prom > div, .con_intro > div, .con_magicdoll > div, .con_bosstime > div, .con_update > div{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.con_dwn .h1, .con_prom .h1, .con_intro .h1, .con_magicdoll .h1, .con_bosstime .h1, .con_update .h1{
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    background: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiiBYp2JU7Cjc2K9rSQLSWdnfyl0VQrjG4oC1QwRVCpyEuvO3HIzieG5TpJezI0BZU_mzmBav0L6G4LYW1O-Yq-dmkgX5KG0AwtToqaDVWLAtMaKy4NlOEdxoEQ1Z-1nlpUFMx3X81UrTBpnwdOCy5pRiU9MlI9gVa0Sud_MQZQqmVH5d84cqVRzS6df4nf/s16000/client_download.png") center no-repeat;
+    text-indent: -9999em;
+    height: 100px;
+    margin-bottom: 50px;
+}
+  
+.con_dwn .downloadList li {
+    border-bottom:1px solid #ffffff0d;
+    padding: 0 22px;
+}
+  
+.con_dwn .downloadList li dl {
+    height: 230px;
+    position: relative;
+    padding: 50px 0 0 158px;
+}
+  
+.con_dwn .downloadList li dl dt {
+    position: absolute;
+    left: 0;
+    top: 50px;
+}
+  
+.con_dwn .downloadList li dl dd.tit {
+    font-size: 23px;
+    font-weight: 700;
+    margin-top: 14px;
+}
+  
+.con_dwn .downloadList li dl dd.txt01 {
+    padding-top: 14px;
+    font-size: 14px;
+  text-align: left;
+}
+.con_dwn .downloadList li dl dd.txt02 {
+    padding-top: 28px;
+    font-size: 14px;
+    color:#ffffff59;
+    text-align: left;
+}
+.con_dwn .downloadList li dl dd.btn {
+    position: absolute;
+    right: 0;
+    top: 80px;
+}
+  
+.con_dwn .downloadList li dl dd.btn a {
+    display: block;
+    width: 250px;
+    height: 60px;
+    text-align: center;
+    line-height: 56px;
+    background: #2574FF;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 12px;
+    transition: background .3s ease;
+    font-weight: 700;
+    border: 2px solid #000000;
+}
+  
+.con_dwn .downloadList li dl dd.btn a:hover {
+    background: #fcd53f;  
+    border-bottom: 5px solid #000000;
+    color: #000000;
+    line-height: 56px;
+    font-weight: 900;
+    height: 65px;
+    margin-top: -5px;
+}
+
+.inform_area{
+    background-color: #00000073;
+    border: 2px solid #18100a1f;
+    box-sizing: border-box; 
+    font-size: 13px; 
+    line-height: 1.89; 
+    padding: 34px 40px; 
+    text-align: left; 
+    text-indent: 0px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.inform_area span{
+    font-size: 0.9rem;
+}
+
+.inform_area .info_title{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.downloadList .txt01, .txt_point{
+    color: #FFEA4C;
+}
+
+
+/* 홍보방법 */
+.con_prom .h1{
+    background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhUpT3c19Af_jNBYaNC9bosT7Fivw3lI7vqI-KeE9QvSoZv3wTLH5Z5RXG1RCiyhVD4-ZSRdFB9ASJ129EjtAk6UesVkG58aGpW5hkn6ETg9PS8Q-WvdIbQHLiGMDvbyymOe7b0mFZxubY_CIn_P8YsgChttHvKLUIe3gKnISgbCAZgLKuzVPKDfIuOJIGm/s16000/publicit_method.png");
+
+}
+
+.con_prom #copyBtn {
+    display: block;
+    margin-top: 20px;
+    width: 200px;
+    height: 52px;
+    text-align: center;
+    line-height: 46px;
+    background: #2574FF;
+    color: #fff;
+    font-size: 14px;
+    font-weight: normal;
+    border-radius: 12px;
+    border: none;
+    transition: background .3s ease;
+    border: 2px solid #000000;
+}
+  
+.con_prom #copyBtn:hover {
+    background: #fcd53f;  
+    color: #000000;
+    font-weight: 900;
+}
+
+.inform_area .txt_point{
+    font-size: 14px;
+    margin-bottom: 14px;
+}
+
+.txt_link{
+    color: #818181;
+    margin-left: 12px;
+}
+
+.txt_link:hover{
+    color: #b99a73;
+}
+
+.txt_white{
+    color: #ffffff !important;
+ } 
+
+/* 서버 소개 */
+.con_intro .h1{
+    background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEieIDKiLkw0SvAhcFVMbjfSFWn_a3kpWl7AkPmB0q3o7bDEUJLP8t0xmmsumjWVRMmBxRXV3-NTgDTmyMU-4QLntE8pvdMuZ5yHGJDHLIyfviJFOX9acyTJsmw9jXFLgjdBPCy5PtYQHc4u7d8-MXoLNyuwjt8K90m12Gk_K0MUEBKw9G2NWfwyCXcXmWR0/s16000/server_introduction.png");
+}
+
+/* 마법 인형 소개 */
+.con_magicdoll .h1{
+    background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkjlAFK_wg6LixhOmBU4418Jj3yuvH-E04qjYt8cKW3EvXzQMzQhv3MH4SlGZMP6MfNZ3UJXNU14wx2RKJo9zHtxVSh-gCHU4c9I4NSnaSdBTNxprKo62qO6aH0Tq9rhqYAf_E2BlqrVPaaOqmxsSaPkaNh2pCZnNWHrM3Qytu-JlPtx1OmjQKsjByA4wT/s16000/magic_doll.png");
+}
+
+/* 업데이트 */
+.con_update .h1{
+    background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjPPVLXqT_TkwZSGXOueLfzr4kyRwrpS9S-bp834HBUx8cP3GMCMesF0eMR1sJRap_RjJzmWQ64BxInMqNPkyhkWl-lXY-fLB4XS4bCjz8oGPUZt-uhTu3A0kpPdZze8Cb2CB71IhS-MkfhOx92weN34PfECQtM0e44u3XgBnisMVmqv-EFR8xQjNccefm6/s16000/update.png");
+}
+
+/* 보스 시간 */
+.con_bosstime .h1{
+    background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiFB_K_PmUKR7skfoX8ACdStGy97hdD3I-4xdsJNYfyMfD4Qg4YkFYXbGzGal27OOUfKYphyk6Sf0fJYiOP1tt7s39354nPTjMFoC2h7S9Hv00MpvVc3kvOhOw2Rmntg4Dk56JdgAv7hKnKEYTvGjAR92dTrjeCxXnqj8J_QIQVGT-XVF4fXy2rpG381GIp/s16000/boss_time.png");
+}
+
+/* 푸터 */
+footer {
+    background-color: #130a05;
+    text-align: center;
+    padding-top: 40px;
+}
+footer .footer-wrap {
+    padding: 20px 40px 80px;
+    margin: 0 auto;
+    max-width: 1800px;
+}
+
+footer .footer-info-top .logo-box img {
+	height: 50px;
+}
+
+footer .footer-wrap .txt-box{
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: -1.08px;
+    color: #999999;
+    display: inline-block;
+}
+
+footer .footer-info-top span {
+    color: #f7c48e;
+}
+
+footer .footer-info-top .txt-box{
+	margin-top: 10px;
+}
+
+footer .footer-info-bottom {
+    padding-top: 10px;
+}
+
+footer .footer-info-bottom .txt-box {
+    font-size: 14px;
+}
+
+.footer-info-bottom .txt-box{
+	font-size: 14px;
+    opacity: .6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
