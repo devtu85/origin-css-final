@@ -359,19 +359,17 @@ ul, dl, dt, dd {
     height: 60px;
     text-align: center;
     line-height: 56px;
-    background: #2574FF;
-    color: #fff;
+    background: rgba(160, 127, 79, 1);
+    color: rgba(255, 255, 255, 1);
     font-size: 16px;
-    border-radius: 12px;
     transition: background .3s ease;
     font-weight: 700;
     border: 2px solid #000000;
 }
   
 .con_dwn .downloadList li dl dd.btn a:hover {
-    background: #fcd53f;  
-    border-bottom: 5px solid #000000;
-    color: #000000;
+    background: rgba(0, 0, 0, 1);  
+    color: rgba(255, 255, 255, 1);
     line-height: 56px;
     font-weight: 900;
     height: 65px;
@@ -516,6 +514,7 @@ footer .footer-info-bottom .txt-box {
 	font-size: 14px;
     opacity: .6;
 }
+
 
 
 
