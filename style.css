@@ -388,7 +388,7 @@ ul, dl, dt, dd {
 
 .inform_area span{
     font-size: 0.9rem;
-	color: #ffffff80;
+	color: #ffffff;
 }
 
 .inform_area .info_title{
@@ -512,6 +512,7 @@ footer .footer-info-bottom .txt-box {
 	font-size: 14px;
     opacity: .6;
 }
+
 
 
 
