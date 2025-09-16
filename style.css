@@ -464,7 +464,7 @@ ul, dl, dt, dd {
 }
 
 /* 고객센터 */
-.con_update .h1{
+.con_support .h1{
     background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhlRUNXsK_KsfDiSbsMBpvBtPCpFBoSYuoRU8-5ZFM9XWN5zpCMFC0oysKSL1AAcH0SzfcYlG0knMKGbO_PeORRzAIhyphenhyphenqJKoCYqH3KtA9ygp-wpq9k35mLe-cMIfOuErLz0-benKvFpSdnzyKxzrQOCmhMVp6ZK5hGz_Fs7VscTCjRfrVlmQM-AYdxEYtL/s16000/update.png");
 }
 
@@ -517,6 +517,7 @@ footer .footer-info-bottom .txt-box {
 	font-size: 14px;
     opacity: .6;
 }
+
 
 
 
