@@ -292,23 +292,23 @@ ul, dl, dt, dd {
     overflow-y: auto;
 }
 
-.con_dwn, .con_prom, .con_intro, .con_magicdoll, .con_bosstime, .con_update{
+.con_dwn, .con_prom, .con_intro, .con_magicdoll, .con_bosstime, .con_update, .con_support{
     background-color: #413023;
 }
 
 /* 다운로드 */
 
-.con_dwn, .con_prom, .con_intro, .con_magicdoll, .con_bosstime, .con_update{
+.con_dwn, .con_prom, .con_intro, .con_magicdoll, .con_bosstime, .con_update, .con_support{
     padding:144px 40px 120px;
     width:100%;
 }
 
-.con_dwn > div,.con_prom > div, .con_intro > div, .con_magicdoll > div, .con_bosstime > div, .con_update > div{
+.con_dwn > div,.con_prom > div, .con_intro > div, .con_magicdoll > div, .con_bosstime > div, .con_update > div, .con_support > div{
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.con_dwn .h1, .con_prom .h1, .con_intro .h1, .con_magicdoll .h1, .con_bosstime .h1, .con_update .h1{
+.con_dwn .h1, .con_prom .h1, .con_intro .h1, .con_magicdoll .h1, .con_bosstime .h1, .con_update .h1, .con_support .h1{
     font-size: 20px;
     color: #ffffff;
     text-align: center;
@@ -463,6 +463,11 @@ ul, dl, dt, dd {
     background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjPPVLXqT_TkwZSGXOueLfzr4kyRwrpS9S-bp834HBUx8cP3GMCMesF0eMR1sJRap_RjJzmWQ64BxInMqNPkyhkWl-lXY-fLB4XS4bCjz8oGPUZt-uhTu3A0kpPdZze8Cb2CB71IhS-MkfhOx92weN34PfECQtM0e44u3XgBnisMVmqv-EFR8xQjNccefm6/s16000/update.png");
 }
 
+/* 고객센터 */
+.con_update .h1{
+    background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhlRUNXsK_KsfDiSbsMBpvBtPCpFBoSYuoRU8-5ZFM9XWN5zpCMFC0oysKSL1AAcH0SzfcYlG0knMKGbO_PeORRzAIhyphenhyphenqJKoCYqH3KtA9ygp-wpq9k35mLe-cMIfOuErLz0-benKvFpSdnzyKxzrQOCmhMVp6ZK5hGz_Fs7VscTCjRfrVlmQM-AYdxEYtL/s16000/update.png");
+}
+
 /* 보스 시간 */
 .con_bosstime .h1{
     background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiFB_K_PmUKR7skfoX8ACdStGy97hdD3I-4xdsJNYfyMfD4Qg4YkFYXbGzGal27OOUfKYphyk6Sf0fJYiOP1tt7s39354nPTjMFoC2h7S9Hv00MpvVc3kvOhOw2Rmntg4Dk56JdgAv7hKnKEYTvGjAR92dTrjeCxXnqj8J_QIQVGT-XVF4fXy2rpG381GIp/s16000/boss_time.png");
@@ -512,6 +517,7 @@ footer .footer-info-bottom .txt-box {
 	font-size: 14px;
     opacity: .6;
 }
+
 
 
 
